@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {height: 100%;}
+body {
+min-height: 100% !important;
+position: relative;
+}
+body {
+font:62.5%/1.25 Tahoma;
+}
+
+/***** Headings *****/
+h1, h2, h3, h4, h5, h6 {
+margin:0;
+padding:0;
+}
+
+/***** Common Formatting *****/
+p, ul, ol, li {
+margin:0;
+padding:0 0 0 0;
+}
+
+ul, ol {
+list-style: none;
+}
+
+blockquote {
+margin:1.25em;
+padding:1.25em 1.25em 0 1.25em;
+}
+
+small {
+font-size:0.85em;
+}
+
+img {vertical-align:top;}
+a img {border:0;}
+
+.png { filter:expression(PNG(this));
+}
+
+sup {
+position:relative;
+bottom:0.5em;
+vertical-align:baseline;
+}
+
+sub {
+position:relative;
+bottom:-0.4em;
+vertical-align:baseline;
+}
+
+acronym, abbr {
+cursor:help;
+letter-spacing:1px;
+border-bottom:1px dashed;
+}
+
+/***** Links *****/
+a,
+a:link,
+a:visited,
+a:hover {
+text-decoration:underline;
+}
+
+/***** Forms *****/
+form {
+margin:0;
+padding:0;
+display:inline;
+}
+
+input, select, textarea {
+font:1em Arial, Helvetica, sans-serif;
+}
+
+textarea {
+width:100%;
+line-height:1.8;
+}
+
+label {
+cursor:pointer;
+}
+
+/***** Tables *****/
+
+table {border-collapse:collapse; border:0;}
+
+/***** Global Classes *****/
+.clear         { clear:both; }
+.right   { float:right; }
+
+.bold          { font-weight:bold; }
+.italic        { font-style:italic; }
+.underline     { border-bottom:1px solid; }
+.highlight     { background:#ffc; }
+
+:focus {
+outline: none;
+}

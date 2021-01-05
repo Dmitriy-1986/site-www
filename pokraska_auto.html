@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<style type="text/css">
+<!--
+.стиль3 {color: #CCCCCC}
+-->
+</style>
+<head>
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robots" content="index,follow">
+<title>Локальная покраска</title>
+<meta name="description" content=" ">
+<meta name="keywords" content=" ">
+  
+<link rel="stylesheet" type="text/css" href="http://kitauto.com.ua/index_files/styleshf.css">
+ <link rel="stylesheet" type="text/css" href="http://kitauto.com.ua/banner.css">
+<link rel="alternate" type="application/rss+xml" title="Новости" href="http://kitauto.com.ua/rss2.php?feed=news">
+<link rel="alternate" type="application/rss+xml" title="Статьи" href="http://kitauto.com.ua/rss2.php?feed=articles">
+<link rel="alternate" type="application/rss+xml" title="Категории" href="http://kitauto.com.ua/rss2.php?feed=categories">
+<link rel="alternate" type="application/rss+xml" title="Новинки" href="http://kitauto.com.ua/rss2.php?feed=new_products&amp;limit=10">
+<link rel="alternate" type="application/rss+xml" title="Рекомендуемые товары" href="http://kitauto.com.ua/rss2.php?feed=featured&amp;limit=10">
+<link rel="alternate" type="application/rss+xml" title="Лучшие товары" href="http://kitauto.com.ua/rss2.php?feed=best_sellers&amp;limit=10">
+<script type="text/javascript" src="http://kitauto.com.ua/index_files/jquery01.js"></script>
+<script type="text/javascript" src="http://kitauto.com.ua/index_files/jquery-d.js"></script>
+<script type="text/javascript" src="http://kitauto.com.ua/index_files/jscript0.js"></script>
+<!-- Include jQuery (Lightbox Requirement) -->
+<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+	<script src="js/prototype.js" type="text/javascript"></script>
+	<script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+	<script src="js/lightbox.js" type="text/javascript"></script>
+
+	<style type="text/css">
+		
+	</style>
+	
+	<style>
+#mail {visibility: hidden;}
+#mail:checked ~ #popup form {visibility: visible;}
+#mail:checked + label {
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 99;
+  color: rgba(0,0,0,0);
+  background: rgba(180,180,180,.9);
+  cursor: pointer;
+}
+#popup {
+  visibility: hidden;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 100;
+}
+#popup form {
+  position: absolute;
+  top: 50%; left: 50%;
+  -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);
+  padding: .5% 1% 1%;
+  border: 1px solid rgb(100,100,100);
+  font-size: 140%;
+  font-weight: 600;
+  text-align: right;
+  text-shadow: -1px -1px #666;
+  color: rgb(240,240,240);
+  background: rgb(150,150,150) linear-gradient(rgb(100,100,100), rgb(170,170,170));
+}
+#popup div:nth-of-type(1) {padding-top: 3%;}
+#popup div:nth-last-of-type(1) {padding: 1% 0 4%;}
+#popup div:after {
+  content: attr(data-title);
+  display: block;
+  font-size: 70%;
+  font-weight: normal;
+  text-shadow: none;
+}
+#popup input {font-size: 90%;}
+#popup [type='submit'] {cursor: pointer;}
+#popup label:hover {
+  color: #dbeaf9;
+  cursor: pointer;
+}
+</style>
+<input type="checkbox" id="mail"/> 
+ <!-- Для того, чтобы label шёл не сразу после input, нужно менять немного селекторы: ссылка1, ссылка2 -->
+
+<div id="popup">
+<form method="post" action="mail.php">
+<label for="mail" title="Отменить">✕</label>
+<div data-title="Например, Мария Петровна">Ваше имя: <input type='text' name='name' required /></div>
+<div data-title="Например, 0981234567">Моб. телефон: <input type="tel" name='tel' required maxlength="11" value='0' pattern="0\d{9}"/></div>
+<div data-title="">Сообщение: <input type="text" name='message' required maxlength="58"/></div>
+<input type='submit' value='Заказать'/>
+</form>
+</div>
+</head>
+
+<body>
+
+<div id="shadow"></div>
+<!-- Контейнер -->
+<div id="container">
+
+<!-- Шапка -->
+<div id="header">
+<div id="header-top">
+
+<script type="text/javascript">
+$(document).ready(function(){$('.recommend').click(function(){$('div.recwindow').fadeIn(600);});$('.recwindow').mouseleave(function(){$('div.recwindow').fadeOut(600);});});
+</script>
+
+<div id="header-left"><a href="http://kitauto.com.ua/index.html" title="Kitauto"><img src="http://kitauto.com.ua/index_files/logo0000.png" alt="Kitauto" /></a></div> 
+<!--<div id="header_center"></div>--><div id="blok1"><a href="http://kitauto.com.ua/kupon.php"><span>Скидка на услуги</span></a></div>
+
+<div id="header-right"><a href="http://kitauto.com.ua/pdr.html"><span><font color="cccccc" style="14px Tahoma">Удаление вмятин без покраски</font></span></a>
+<div style="width:100px;text-align:right; display:inline; !important;">
+<div id="menu"><ul>
+<li><a href="http://kitauto.com.ua/index.html"><span>ГЛАВНАЯ</span></a></li>
+<li><a href="http://kitauto.com.ua/index.html"><span>О КОМПАНИИ</span></a></li>
+<li><a href="http://kitauto.com.ua/foto.html"><span>ФОТО</span></a></li>
+<li><a href="http://kitauto.com.ua/contuct-us.html"><span>КОНТАКТЫ</span></a></li>
+</ul></div>
+<!-- Бокс языки -->
+<!--<div id="boxLanguagesContent">
+ <a href="http://kitauto.com.ua/index.php?language=ru">Русский</a> |  <a href="http://kitauto.com.ua/index.php?language=en">English</a> | 
+</div>
+<!-- /Бокс языки -->
+</div>
+</div>
+</div>
+<!-- top menu -->
+<div id="top_menu">
+<ul>
+
+<li><a href="http://kitauto.com.ua/pokraska_auto.html"><span>Прокраска автомобиля</span></a></li>
+<li><a href="http://kitauto.com.ua/lokalnaya_pokraska.html"><span>Локальная покраска</span></a></li>
+<li><a href="http://kitauto.com.ua/pdr.html"><span>Удаление вмятин<font color="#AA0202" style="padding-left:1px;"></font></span></a></li>
+<li><a href="http://kitauto.com.ua/polirovka_kuzova.html"><span>Полировка кузова</span></a></li>
+<li><a href="http://kitauto.com.ua/remont_detaley.html"><span>Ремонт пластиковых деталей</span></a></li>
+
+<li><a href="http://kitauto.com.ua/broneplenka.html"><span>Бронепленка</span></a></li>
+<!-- li><a target="_blank" href="http://www.facebook.com/"><span>FACEBOOK</span></a></li-->
+</ul>
+<span id="cart"></span>
+</div>
+<!-- /top menu -->
+</div>
+<div class="clear"></div>
+<!-- /Шапка -->
+<!-- main content -->
+<div id="main_content">
+<div id="navigation"></div>
+<div id="pagecontent">
+<div id="about_us2"><h1>ПОКРАСКА АВТОМОБИЛЯ СТО ИЛИ ГАРАЖ</h1>
+ <table>
+    <tbody>
+      <tr><td style="padding-left: 10px;" width="410" valign="top"><label for="mail"><img align="center" src="http://kitauto.com.ua/zakazat_zvonok.png" alt="заказать звонок" /></label><a rel="lightbox[1]"href="images/1_DSC0395.JPG">
+	  </td>
+
+	<td width="390" colspan="2" style="padding:6px 7px 7px 40px;"><img alt="" src="images/a_pokraska.png" width="390">
+</div><p></p></td></tr>
+
+<div>
+ <tr><td style="padding-left: 10px;" width="410" valign="top"><p>
+	  Сложившийся стереотип о том, что «гараж – это дешево, а СТО – бешеные деньги» не всегда соответствует действительности. Случается, что стоимость услуг в миру и в подполье может быть примерно одинаковая, а качество их будет существенно отличаться. Хотя, конечно, в  большинстве случаев «гаражники» понимают, что взамен приличной компании их выбирают только из желания сэкономить, и поэтому снижают свои цены.</p><p>
+ Очевидно, что платить большие деньги за качественную покраску старенькой Audi, на которой уже и ездить стыдно, не стоит, эту работу вполне можно сделать в гараже. И наоборот, если у вас хватило денег на покупку нового Mercedes, не экономьте на покраске и поручите это задание мастерам проверенной и дорогой фирмы.</p><p>
+Покраска – вид работ, который чреват последствиями, поэтому главный аргумент в пользу СТО – гарантия. Срок гарантии одинаков во всех легальных фирмах и составляет шесть месяцев.</p><p>
+Добиться надлежащего качества работ в гараже невозможно, это факт. Конечный результат зависит даже от таких мелочей, есть ли пылинки на одежде у человека, который распыляет краску
+	</p>
+
+<p> 
+Обеспечить компьютерный подбор краски смогут далеко не в каждом гараже. Нескольких помещений (для постов окраски, сушки, приготовления красок) там тоже не найдешь. И это далеко не все аргументы, помогающие сделать выбор в пользу качественных СТО.
+Помните также, что серьезные фирмы, которые уже давно оказывают подобные услуги, очень заботятся о своей репутации и вряд ли попытаются подсунуть вам «фуфло».</p>
+ </td>
+
+	<td width="390" colspan="2" style="padding:6px 7px 7px 40px;">
+ <a rel="lightbox[1]"href="images/mercedes1.JPG"><img alt="" src="images/mercedes1.JPG" width="390"><span class="nome_prod"></span></a>
+ <p>
+ <a rel="lightbox[1]"href="images/mercedes2.JPG"><img alt="" src="images/mercedes2.JPG" width="390"><span class="nome_prod"></span></a>
+   </div></td></tr>
+	<tr><td style="padding-left: 10px;" width="410" valign="top">
+
+
+
+</td></td>
+<td width="390" colspan="2" style="padding:6px 7px 7px 40px;"> </td></tr>
+
+  <tr><td style="padding-left: 10px;" width="410" valign="top">
+	  <p>Покраска автомобиля на KITAUTO производиться в покрасочной камере высококвалифицированными  специалистами которые периодически проходят повышение квалификации и обучение в Германии. Мы используем   материалы и краски немецкой фирмы “STANDOKS”.</p>
+<p>Благодаря собственному компьютерному подбору краски мы сокращаем время ремонта и гарантируем попадание в цвет!</p>
+<div id="blok1"><span>Цена от 400грн</span></div></td><td width="390" colspan="2" style="padding:6px 7px 7px 40px;"><a rel="lightbox[1]"href="images/mercedes3.JPG"><img alt="" src="images/mercedes3.JPG" width="390"><span class="nome_prod"></span></a> </td></tr>
+ 
+ <tr><td style="padding-left: 10px;" width="410" valign="top">
+  <span style="color: #777;"></span><br><br><a rel="lightbox[1]"href="images/nubira1.JPG"><img alt="" src="images/nubira1.JPG" width="380"><span class="nome_prod"></span></a></td>
+  <td width="390" colspan="2" style="padding:30px 17px 7px 40px;"><a rel="lightbox[1]"href="images/nubira2.JPG"><img alt="" src="images/nubira2.JPG" width="380"><span class="nome_prod"></span></a></td>                </tr>
+
+
+ <tr><td style="padding-left: 10px;" width="410" valign="top">
+  <span style="color: #777;"></span><br><br><a rel="lightbox[1]"href="images/Nissan_X-Trail1.JPG"><img alt="" src="images/Nissan_X-Trail1.JPG" width="390"><span class="nome_prod"></span></a></td>
+  <td width="390" colspan="2" style="padding:30px 17px 7px 40px;"><a rel="lightbox[1]"href="images/Nissan_X-Trail2.JPG"><img alt="" src="images/Nissan_X-Trail2.JPG" width="390"><span class="nome_prod"></span></a></td>                </tr>
+
+
+
+ </tbody>
+  </table>
+</div>
+</div>
+</div>
+<!-- /main content -->
+<div class="clear"></div>
+<!-- Низ -->
+<div id="footer">
+<div id="search">
+<!-- Бокс поиск -->
+<!--<form id="quick_find" action="http://kitauto.com.ua/advanced_search_result.php" method="get">
+<span class="search_input"><input type="text" name="keywords" id="quick_find_keyword"></span><span class="button_submit">
+<input id="no_border_bottom" type="image" src="http://kitauto.com.ua/about-us_files/button_q.gif" alt="Искать" title=" Искать " />
+</span>
+</form> -->
+<!-- /Бокс поиск --></div>
+<div id="copyrights"> <a href="http://unaik.ua">Создать сайт</a> © 2013 UNAIK</div>
+</div>
+<!-- /Низ -->
+<!-- /Контейнер -->
+<script type="text/javascript">
+
+<!--//
+
+jQuery(document).ready(function() {
+    jQuery('#products_carousel').jcarousel({
+      buttonNextEvent: 'click',
+      buttonPrevEvent: 'click',
+      buttonNextHTML: '<img src="images/scroll_right_dark.gif" width="24" alt="Move Right" height="44" />',
+      buttonPrevHTML: '<img src="images/scroll_left_dark.gif" width="24" alt="Move Left" height="44" />',
+    	scroll: 5,
+    	initCallback: carouselCallback,
+    	itemLoadCallback: {
+    	  onBeforeAnimation: fadeProductsOut,
+    	  onAfterAnimation: fadeProductsIn
+    	},
+      wrap: 'circular'
+    });
+});
+
+function carouselCallback()
+{
+  //$('#featured_products_wrapper').hide();
+  $('#featured_products_wrapper').css('visibility','visible');
+  //$('#featured_products_wrapper').fadeIn();
+}
+
+function fadeProductsOut(){
+  //$('#featured_products_holder li').fadeTo('250', '0.5');
+}
+function fadeProductsIn(){
+  //$('#featured_products_holder li').fadeTo('250', '1.0');
+}
+
+-->
+
+</script>
+<!-- AddThis Button BEGIN -->
+<script type="text/javascript" src="http://kitauto.com.ua/index_files/addthis0.js"></script>
+<!-- AddThis Button END -->
+</body>
+</html>

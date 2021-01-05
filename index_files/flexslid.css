@@ -1,0 +1,174 @@
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {outline:none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin:0; padding:0; list-style:none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {width:960px; margin:0; padding:0;}
+.flexslider .slides > li {display:none; position:relative;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {/*max-width:960px;*/ display:block;}
+.flex-pauseplay span {text-transform:capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display:block; clear:both; visibility:hidden; line-height:0; height:0;} 
+html[xmlns] .slides {display:block;} 
+* html .slides {height:1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display:block;}
+
+
+/* SHOWREEL HOME
+*********************************/
+.showreel_home {position:relative; zoom:1;  margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;}
+.showreel_home .slides {zoom: 1;}
+.showreel_home .slides > li {position:relative; /*width:960px; height:532px;*/}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.showreel_home {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption {width: 96%; padding: 2%; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
+
+/* Direction Nav */
+.flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(immages/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li .next {background-position: -52px 0; right: -21px;}
+.flex-direction-nav li .prev {left: -20px;}
+.flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: 10px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; background: url(images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+/* NEWS HOME
+*********************************/
+#news {position:relative;}
+.news_home {}
+.news_home ul.slides {}
+.news_home ul li {}
+
+.news_home ul {list-style:none; padding:0; margin:0; border:0;}
+.news_home ul li {}
+.news_home ul li div {float:left; width:460px!important; margin:0 20px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+.news_home ul li div img {float:left; margin:0 10px 0 0;}
+.news_home ul li div span.data {font-size:9px; color:#444444;}
+.news_home ul li div a {font:20px/20px 'BebasNeueRegular', Arial, sans-serif; color:#000; text-decoration:none;}
+.news_home ul li div a:hover {color:#78787B;}
+
+/* right */
+.news_home ul.flex-direction-nav a.next {background-position: 0 -30px; clear:right; margin-right:0px; position:absolute; right:-65px; top:55px; background:url(btn_righ.gif) no-repeat top left;}
+.news_home ul.flex-direction-nav a.next:hover {background:url(images/btn_right_over.gif) no-repeat top left;}
+.news_home ul.flex-direction-nav a.next:active {} 
+
+/* left */
+.news_home ul.flex-direction-nav a.prev {margin-left: 0px; position:absolute; left:-30px; top:55px; background:url(btn_left.gif) no-repeat top left;} 
+.news_home ul.flex-direction-nav a.prev:hover {background:url(images/btn_left_over.gif) no-repeat top left;}
+.news_home ul.flex-direction-nav a.prev:active {}
+
+/* PROGETTI
+*********************************/
+#wrap_showreel_proj {position:relative;}
+.showreel_proj {}
+.showreel_proj ul.slides {}
+.showreel_proj ul li {}
+.showreel_proj ul li a {}
+
+.showreel_proj ul {list-style:none; padding:0; margin:0; border:0;}
+.showreel_proj ul li {}
+.showreel_proj ul li div {float:left; width:460px!important; margin:0 20px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+.showreel_proj ul li div img {width:960px!important; height:350px!important;}
+.showreel_proj ul li div span.data {font-size:9px; color:#444444;}
+.showreel_proj ul li div a {font:20px/20px 'BebasNeueRegular', Arial, sans-serif; color:#000; text-decoration:none;}
+.showreel_proj ul li div a:hover {color:#78787B;}
+
+.showreel_proj ul li div.ico_zoom {display:none; background:url(images/zoom.png) no-repeat top right; width:49px!important; top:0; right:0; height:47px!important; position:absolute; margin:0!important; text-indent:-9999px;}
+
+/* right */
+.showreel_proj ul.flex-direction-nav a.next {background-position: 0 -30px; clear:right; margin-right:0px; position:absolute; right:-65px; top:175px; background:url(btn_righ.gif) no-repeat top left;}
+.showreel_proj ul.flex-direction-nav a.next:hover {background:url(images/btn_right_over.gif) no-repeat top left;}
+.showreel_proj ul.flex-direction-nav a.next:active {} 
+
+/* left */
+.showreel_proj ul.flex-direction-nav a.prev {margin-left: 0px; position:absolute; left:-30px; top:175px; background:url(btn_left.gif) no-repeat top left;} 
+.showreel_proj ul.flex-direction-nav a.prev:hover {background:url(images/btn_left_over.gif) no-repeat top left;}
+.showreel_proj ul.flex-direction-nav a.prev:active {}
+
+/* DESIGNER
+*********************************/
+#wrap_showreel_des {position:relative;}
+.showreel_des {}
+.showreel_des ul.slides {}
+.showreel_des ul li {}
+.showreel_des ul li a {}
+
+.showreel_des ul {list-style:none; padding:0; margin:0; border:0;}
+.showreel_des ul li {background:#b8b9bb;}
+.showreel_des ul li div.video_content {height:335px!important; width:960px!important; text-align:center; padding:15px 0 0 0;}
+.showreel_des ul li div {float:left; width:460px!important; margin:0 20px 0 0; font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+.showreel_des ul li div img {width:960px!important; height:350px!important;}
+.showreel_des ul li div span.data {font-size:9px; color:#444444;}
+.showreel_des ul li div a {font:20px/20px 'BebasNeueRegular', Arial, sans-serif; color:#000; text-decoration:none;}
+.showreel_des ul li div a:hover {color:#78787B;}
+
+.showreel_des ul li div.ico_zoom {display:none; background:url(images/zoom.png) no-repeat top right; width:49px!important; top:0; right:0; height:47px!important; position:absolute; margin:0!important; text-indent:-9999px;}
+
+/* right */
+.showreel_des ul.flex-direction-nav a.next {background-position: 0 -30px; clear:right; margin-right:0px; position:absolute; right:-65px; top:175px; background:url(btn_righ.gif) no-repeat top left;}
+.showreel_des ul.flex-direction-nav a.next:hover {background:url(images/btn_right_over.gif) no-repeat top left;}
+.showreel_des ul.flex-direction-nav a.next:active {} 
+
+/* left */
+.showreel_des ul.flex-direction-nav a.prev {margin-left: 0px; position:absolute; left:-30px; top:175px; background:url(btn_left.gif) no-repeat top left;} 
+.showreel_des ul.flex-direction-nav a.prev:hover {background:url(images/btn_left_over.gif) no-repeat top left;}
+.showreel_des ul.flex-direction-nav a.prev:active {}
+
+/* SHOWREEL CORPORATE
+*********************************/
+#corporate .content {position:relative;}
+.showreel_corporate {}
+.showreel_corporate ul.slides {}
+.showreel_corporate ul li {}
+
+.showreel_corporate ul {list-style:none; padding:0; margin:0; border:0;}
+.showreel_corporate ul li {}
+.showreel_corporate ul li div {float:left; width:960px!important; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:20px;}
+.showreel_corporate ul li div img {float:left; margin:0 10px 0 0;}
+.showreel_corporate ul li div span.data {font-size:9px; color:#444444;}
+.showreel_corporate ul li div a {font:20px/20px 'BebasNeueRegular', Arial, sans-serif; color:#000; text-decoration:none;}
+.showreel_corporate ul li div a:hover {color:#78787B;}
+.showreel_corporate ul li div.txt {float:left; width:380px!important; padding:10px 0 0 0;}
+
+
+/* right */
+.showreel_corporate ul.flex-direction-nav a.next {background-position: 0 -30px; clear:right; margin-right:0px; position:absolute; right:-65px; top:270px; background:url(images/btn_corp_right.gif) no-repeat top left;}
+.showreel_corporate ul.flex-direction-nav a.next:hover {background:url(images/btn_corp_right_over.gif) no-repeat top left;}
+.showreel_corporate ul.flex-direction-nav a.next:active {} 
+
+/* left */
+.showreel_corporate ul.flex-direction-nav a.prev {margin-left: 0px; position:absolute; left:-30px; top:270px; background:url(images/btn_corp_left.gif) no-repeat top left;} 
+.showreel_corporate ul.flex-direction-nav a.prev:hover {background:url(images/btn_corp_left_over.gif) no-repeat top left;}
+.showreel_corporate ul.flex-direction-nav a.prev:active {}
+

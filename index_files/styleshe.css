@@ -1,0 +1,503 @@
+@import url("reset000.css");
+
+/************************common**********************/
+body{
+}
+
+a:link, a:visited {
+text-decoration: underline;
+color: #333;
+}
+
+a:hover {
+text-decoration: none;
+color: #333;
+}
+
+p {
+padding: 2px 0 12px 0;
+margin: 0;
+text-align: left;
+}
+
+h3 {font:19px Tahoma;color:#000000;}
+/************************common**********************/
+
+.verstka{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10000000000000;}
+.TOP5{background:url('http://dressaddict.com.ua/templates/vamshop/TOP5.png') no-repeat 37px 2px;}
+
+
+/**********************main********************/
+#container{width:1004px;margin:0 auto;}
+#mp_header{font:italic 37px Times New Roman;text-align:center;position:relative;}
+#mp_main_content img{float:left;border:0;padding:0 0 15px 0;}
+#pagecontent, .pagecontus, #loginpage{background-color:#fff;position:relative;z-index:10000;border-top:12px solid #fff;border-bottom:12px solid #fff;margin: 0 0 5px 0;font:12px Tahoma;/*height:558px;overflow:hidden;*/}
+#about_us{margin: 0 auto;font:12px Tahoma;color:#818080;padding-top:18px;}
+.pagecontus{height:508px !important;font:14px Tahoma !important;}
+#pagecontent table {vertical-align:top;}
+.pagecontus{background: #fff url('http://dressaddict.com.ua/templates/vamshop/img/ruki.jpg') 480px 20px no-repeat;color:#818080;padding:50px 0 0 58px;}
+.pagecontus h3{padding-bottom:18px;}
+.simplicity{background:url('http://dressaddict.com.ua/templates/vamshop/img/simplicity.png') 0 0 no-repeat;width:367px;height:85px;position:relative;top:20px;left:-15px;} 
+#message_body{width:280px;height:90px;}
+#navigation{position:absolute;top:171px;font:12px Tahoma;color:#818080;z-index:1000;margin-left: 12px;}
+#navigation a{font:12px Tahoma !important;color:#818080 !important;}
+#shadow{position:fixed;top:0;left:0;width:100%;height:100%;display:none;background-color:black; opacity:0.5; filter:alpha(opacity=50); -moz-opacity:.50; z-index: 999999;}
+.custom_social{padding-top:26px;width:200px;text-align:center !important;margin:0 auto;font:12px Tahoma;color:#000;}
+.product_title_carousel a{text-decoration:none;font:12px Tahoma;}
+.product_title_carousel a:hover{text-decoration:underline !important;font:12px Tahoma;}
+#mp_img{width:100%;height:561px;background:url('/metal/index_files/mp000000.jpg') no-repeat -2px 4px;padding:4px 0 6px 0;}
+
+
+/**********************catalog********************/
+#category_content{background-color:#fff;position:relative;z-index:10000;border:12px solid #b8b8b8;margin: 0 0 5px 0;padding:13px 20px 15px 20px;font:12px Tahoma;color:#959595;}
+#catalog_cells{height:460px;}
+.cell1{width:181px;height:368px;float:left;padding:82px 10px 0 0;background:url('http://dressaddict.com.ua/templates/vamshop/img/cat_delimeter.png') 100% 8px no-repeat;}
+.cell2{width:295px;height:450px;float:left;background:url('http://dressaddict.com.ua/templates/vamshop/img/cat_delimeter.png') 100% 8px no-repeat;}
+.cell3{width:225px;height:370px;float:left;padding-top:80px;background:url('http://dressaddict.com.ua/templates/vamshop/img/cat_delimeter.png') 100% 8px no-repeat;}
+.cell4{width:228px;height:450px;float:left;}
+.cell1 a, .cell2 a, .cell3 a, .cell4 a{text-transform:uppercase;text-decoration:none;font:14px Tahoma;color:#959595;}
+.cat_dress{background:url('http://dressaddict.com.ua/templates/vamshop/img/dress.jpg') 50% 0 no-repeat;height:273px;}
+.cat_dress:hover{background:url('http://dressaddict.com.ua/templates/vamshop/img/dress.jpg') 50% -272px no-repeat;height:273px;}
+.cat_dress a{position:absolute;padding:348px 10px 0 0;text-align:center;width:181px;text-align:center;}
+.tops{background:url('http://dressaddict.com.ua/templates/vamshop/img/tops.jpg') 50% 0 no-repeat;height:278px;}
+.tops:hover{background:url('http://dressaddict.com.ua/templates/vamshop/img/tops.jpg') 50% -278px no-repeat;height:278px;}
+.tops a{position:absolute;padding-top:350px;text-align:center;width:225px;text-align:center;}
+.blusy{background:url('http://dressaddict.com.ua/templates/vamshop/img/blusy.jpg') 50% 0 no-repeat;height:168px;}
+.blusy:hover{background:url('http://dressaddict.com.ua/templates/vamshop/img/blusy.jpg') 50% -168px no-repeat;height:168px;}
+.blusy a{position:absolute;padding-top:180px;text-align:center;background:url('http://dressaddict.com.ua/templates/vamshop/img/hor_delimeter.png') 50% 100% no-repeat;width:295px;text-align:center;height:29px;}
+.bly{margin-top:61px;background:url('http://dressaddict.com.ua/templates/vamshop/img/bly.jpg') 50% 0 no-repeat;height:183px;}
+.bly:hover{background:url('http://dressaddict.com.ua/templates/vamshop/img/bly.jpg') 50% -183px no-repeat;height:183px;}
+.bly a{position:absolute;padding-top:200px;text-align:center;width:295px;text-align:center;height:29px;}
+.sumki{margin-top:8px;background:url('http://dressaddict.com.ua/templates/vamshop/img/sumki.jpg') 50% 0 no-repeat;height:160px;}
+.sumki:hover{background:url('http://dressaddict.com.ua/templates/vamshop/img/sumki.jpg') 50% -160px no-repeat;height:160px;}
+.sumki a{position:absolute;padding-top:170px;text-align:center;background:url('http://dressaddict.com.ua/templates/vamshop/img/hor_delimeter2.png') 50% 100% no-repeat;width:228px;text-align:center;height:30px;}
+.jewel{margin-top:71px;background:url('http://dressaddict.com.ua/templates/vamshop/img/jewel.jpg') 50% 0 no-repeat;height:154px;}
+.jewel:hover{background:url('http://dressaddict.com.ua/templates/vamshop/img/jewel.jpg') 50% -154px no-repeat;height:154px;}
+.jewel a{position:absolute;padding-top:192px;text-align:center;width:228px;text-align:center;}
+.all_cat{margin:0 auto;text-align:center;font:14px Tahoma;text-decoration:none;color:#898888;padding-top:22px;}
+.all_cat a{color:#898888;}
+#category_list{margin:0 auto;border-top:12px solid #b8b8b8;border-bottom:12px solid #b8b8b8;height:557px;}
+#products_list{margin:0 auto;border-top:12px solid #b8b8b8;border-bottom:12px solid #b8b8b8;}
+#top5_products_list{margin:0 auto;background-color:#fff;position:relative;z-index:1000000;padding:16px 0 30px 0;color:#818080;font:12px Tahoma;}
+.navigation {
+    background-color: #B8B8B8;
+    color: #FFFFFF;
+    font: 14px Tahoma;
+    margin: -1px 0 0 370px;
+    padding: 0px 2px 2px 16px;
+    position: absolute;
+    text-align: center;
+    width: 160px;
+}
+.color_block{width:14px;height:14px;background-color:#900;}
+#product_content{margin-top:8px;color:#818080;font:12px Tahoma;}
+#product_content h1{font:20px Tahoma;color:#000;}
+#first_cell{padding:30px 73px 0 13px;vertical-align:top;width:234px;}
+#second_cell{vertical-align:top;width:421px;text-align:center;}
+#third_cell{padding:48px 0 0 26px;vertical-align:top;}
+.metka{padding:0px 4px 0px 4px;background-color:#777676;font:14px Arial;text-transform:uppercase;color:#fff;}
+#extra_f{margin-top:28px;list-style-type: disc;list-style-position: inside;}
+#extra_f li{}
+#cross_sell{margin-top:80px;}
+#cross_sell img{width:80px;height:128px;position:relative;margin-top:-20px;}
+.cross_sell_img_block{height:120px;overflow:hidden;float:left;}
+.bold{font:24px Tahoma;color:#000;}
+.choose_cat{margin-left:36px;font:14px Tahoma;}
+#dlinks li{padding:4px 0 6px 28px;}
+#dlinks li a{text-decoration:none;color:#818080;}
+.vdohnoveniye{background-color:#fff;z-index:10000;position:absolute;background:url('http://dressaddict.com.ua/images/vdohnoveniye.jpg') 0px 0px no-repeat;width:1004px;height:577px;}
+.vdohnoveniye_block{height:577px;}
+.veshalka{background:url('http://dressaddict.com.ua/templates/vamshop/img/veshalka.png') 0px 4px no-repeat;}
+.tyotya{background:url('http://dressaddict.com.ua/templates/vamshop/img/tyotya.png') 0px 0px no-repeat;}
+.telephone{background:url('http://dressaddict.com.ua/templates/vamshop/img/telephone.png') 0px 1px no-repeat;}
+.color_block{width:12px;height:12px;background-color:#967;border:2px solid #000;display:block;float:left;}
+.yes img{border:2px solid #000;margin-top:-2px;} 
+.qty input{width:9px !important;padding:0px 2px;}
+.twindow, .telwindow, .vwindow{z-index:1000000;position:absolute;top:196px;left:50%;margin:0px 0 0 -225px;width:450px;height:182px;border:14px solid #cccccc;display:none;background-color:#fff;
+-moz-box-shadow: 4px 4px 5px rgba(0,0,0,0.9); /* Для Firefox */
+-webkit-box-shadow: 4px 5px 4px rgba(0,0,0,0.9); /* Для Safari и Chrome */
+box-shadow: 4px 4px 5px rgba(0,0,0,0.9); /* Параметры тени */
+}
+.ph_window{z-index:1000000;position:absolute;left:50%;margin:-222px 0 0 -225px;width:450px;height:482px;border:14px solid #cccccc;display:none;background-color:#fff;
+-moz-box-shadow: 4px 4px 5px rgba(0,0,0,0.9); /* Для Firefox */
+-webkit-box-shadow: 4px 5px 4px rgba(0,0,0,0.9); /* Для Safari и Chrome */
+box-shadow: 4px 4px 5px rgba(0,0,0,0.9); /* Параметры тени */
+}
+.ph_window_close{width:46px;position:absolute;margin:-26px 0 0 450px;font:bold 10px Arial !important;color:#000 !important;padding:0 8px 5px 8px;}
+.ph_window_close a{text-decoration:none;font:bold 10px Arial !important;color:#000 !important;}
+.telwindow h6{font:36px Tahoma;color:#000;margin:3px 0 0 60px;}
+.recwindow{display:none;position: absolute;padding:5px 4px 4px 4px;margin-left:-7px;}
+.vwindow{width:450px;height:288px;}
+.twindow_close, .telwindow_close, .vwindow_close, .recwindow_close{position:absolute;margin:-9px 0 0 437px;font:bold 14px Arial !important;color:#000 !important;padding:0 8px 5px 8px;background-color:#ccc;}
+.recwindow_close{position:absolute;float:right;margin:-9px 0px 0 -12px;}
+.twindow_close a, .telwindow_close a, .vwindow_close a, .recwindow_close a{text-decoration:none;font:bold 14px Arial !important;color:#000 !important;}
+#mprecwindow{top:300px !important;}
+.page_left{width:22px;height:22px;border:1px solid red;position:absolute;float:right;right:0px;}
+#color_switch{position:relative;margin-top:-164px;z-index:10;}
+.reft{height:80px;width:100%;}
+.reft strike{font:18px Tahoma !important;color:#aaa;}
+.refg{width:100%;}
+.refo{height:40px;width:100%;}
+#page_nav{display:none;position:absolute;width:150px;height:30px;margin:-48px 0 0 100px;z-index:10000;}
+#page_nav ul{}
+#page_nav ul li{display:block;float:left;}
+#page_nav ul li a {width:31px;height:31px;display:block;}
+.pl{background:url('http://dressaddict.com.ua/templates/vamshop/img/scroll_left.png') 0 0 no-repeat;margin-right:12px;}
+.pr{background:url('http://dressaddict.com.ua/templates/vamshop/img/scroll_right.png') 0 0 no-repeat;margin-right:12px;}
+.pt{padding-top:7px;font:14px Tahoma;}
+.likebox{position:absolute;top:669px;clear:left;}
+.likebox_p{padding: 2px 0 7px 0;}
+.top5_likebox{position:absolute;top:479px;clear:left;text-align:center;left:725px;}
+.addthis_toolbox{padding-left:0px;margin-left:-1px;position:relative;}
+.NEW, .EXCLUSIVE{width:69px;height:48px;position:absolute;color:#000000;display:block;margin:14px 0 0 265px;z-index:99;}
+.NEW{background:url('http://dressaddict.com.ua/templates/vamshop/img/new.png') 0 0 no-repeat;}
+.EXCLUSIVE{background:url('http://dressaddict.com.ua/templates/vamshop/img/exclusive.png') 0 0 no-repeat;}
+.hidden{display:none;}
+
+#errorcontent{font:14px Tahoma;color:#7B7B7B;text-align:center;background-color:#fff;position:relative;z-index:10000;border-top:12px solid #b8b8b8;border-bottom:12px solid #b8b8b8;margin: 0 0 5px 0;height:358px;padding-top:200px;overflow:hidden;}
+.error_message{font:26px Tahoma;color:#B50B0C;}
+
+/**********************cart********************/
+#cart{position:absolute;display:block;margin:-7px 0 0 744px;width:260px;}
+.boxheader{float:right;padding:7px 15px 6px 15px;background-color:#000;color:#818080;font:14px Tahoma;text-transform:uppercase;}
+.boxheader a{color:#818080;text-decoration:none;}
+.page_cart_total{color:#b4b3b3;}
+#divShoppingCart{background-color:#fff;}
+.cart_empty{font:14px Tahoma;text-transform:uppercase;color:#818080;padding:7px 6px 0 0;}
+.cart_empty .gray{color:#b4b3b3;}
+.cart_product_cell{height:100px;padding:4px 0 6px 0;border-bottom:1px solid #ddd;}
+.cart_product_image img {width:59px;height:96px;border:1px solid #ddd;}
+.cart_content{width:240px;display:none;position:relative;padding:18px 10px 10px 10px;background-color:#fff;float:left;margin-top:0px;z-index: 10001;
+ -moz-box-shadow: 0 5px 7px rgba(0,0,0,0.6); /* Для Firefox */
+    -webkit-box-shadow: 0 5px 7px rgba(0,0,0,0.6); /* Для Safari и Chrome */
+    box-shadow: 0 5px 7px rgba(0,0,0,0.6); /* Параметры тени */
+}
+.cart_product_image{float:left;height:100px;}
+.cart_product_info{float:right;height:100px;width:160px;text-align:left;font:12px Tahoma;}
+.cart_product_info a{color:#000;}
+.grey{color:#aaa;}
+.CartContentShiping{background-color: #EDEDED;border: 1px solid #CCCCCC;padding: 10px;text-align: center;font-size: 12px;}
+.CartContentShiping a{text-decoration:none;}
+.link2cart{margin:13px 0 0 0px;text-align:center;}
+.link2cart a {background: none repeat scroll 0 0 #B81111;border: 1px solid #F5DDDD;color:white;font-size:12px;padding:5px 15px;text-decoration:none;}
+.CartContentTotal{border-bottom:1px solid #DDDDDD;font-size:12px;padding:10px 0;margin-bottom:10px;}
+#product_cells{max-height:400px;overflow:auto;}
+.cart_close{width:16px;height:16px;cursor:pointer;position:absolute;margin:-14px 0 0 224px;background:url('http://dressaddict.com.ua/templates/vamshop/img/basket_close.png') no-repeat;}
+.delproduct{padding-top:32px;}
+.ship_red{font:bold 16px Tahoma;color:#920201;}
+.ship_white{font:bold 15px Tahoma;color:#fff;}
+.oform_content{padding:80px 0 0 110px;}
+
+/**********************login********************/
+#loginpage{background:#ffffff url('http://dressaddict.com.ua/templates/vamshop/img/login_bg.jpg') 12px 12px no-repeat;height:484px;padding:74px 0 0 98px;}
+#loginpage h1{font:26px Tahoma;color:#dcdcdc;}
+#loginform {padding:77px 0 0 106px;}
+#loginform input{background-color:transparent !important;border:none !important;border-bottom:1px solid #fff !important;width:100%;color:#fff;}
+.login_ls{font:14px Tahoma;color:#fff;width:72px;display:block;float:left;}
+.login_ls2{font:14px Tahoma;color:#fff;width:112px;display:block;float:left;}
+.login_bigls{font:14px Tahoma;color:#fff;width:212px;display:block;float:left;}
+.login_mediumls{font:14px Tahoma;color:#fff;width:156px;display:block;float:left;}
+.login_rs{font:14px Tahoma;color:#fff;width:245px;display:block;float:left;height:20px;}
+#comments{height:100px;width:247px;background-color:transparent;background-image:url('http://dressaddict.com.ua/templates/vamshop/img/textarea_bg_trans.png');border:none !important;color:#fff;font:14px/20px Tahoma !important;}
+.login_smallrs{font:14px Tahoma;color:#fff;width:25px;display:block;float:left;margin-top:3px;}
+.lb{padding:10px 0 0 208px;width:108px;}
+.lb2{padding:10px 0 0 249px;width:108px;border:none !important;height:23px;overflow:hidden;}
+.lb3{padding:10px 0 0 401px;width:108px;}
+.lp{padding:6px 0 0 208px;width:108px;color:#fff;}
+.lp a{color:#fff;}
+.hr{width:357px;height:4px;border-bottom:3px solid #999;margin-bottom: 2px;}
+.login_rs label{position:relative;right:-266px;padding:4px;background-color:#333;font:11px Tahoma;float:right;}
+.sprint_link{padding:32px 0 0 105px;}
+.sprint_link a{font:bold 16px Tahoma;color:#444444;}
+.sheet .selective{display:none;}
+
+
+/**********************contuct us********************/
+#contact_form input {background-color:transparent !important;border:none !important;border-bottom:1px solid #000 !important;color:#000;}
+.contact_ls{font:14px Tahoma;color:#818080;width:82px;display:block;float:left;}
+.contact_ls_textarea{height:100px;font:14px Tahoma;color:#818080;width:82px;display:block;float:left;}
+.contact_rs{font:14px Tahoma;color:#818080;width:245px;display:block;float:left;height:20px;color:#000;}
+.contact_rs input{width:247px;}
+.contact_rs_textarea{height:100px;font:14px Tahoma;color:#818080;width:245px;display:block;float:left;color:#000;}
+#message_body{height:100px;width:247px;background-image:url('http://dressaddict.com.ua/templates/vamshop/img/textarea_bg.png');border:none !important;color:#000;font:14px/20px Tahoma !important;}
+.contact_rs label{position:relative;right:-266px;padding:4px;background-color:#333;font:11px Tahoma;float:right;}
+.pagecontusfooter{clear:left;width:370px;padding:18px 0 0 199px;}
+.pagecontusfooter2{clear:left;width:370px;padding:18px 0 0 221px;}
+.askaquestion{color:#818080;padding:20px 0 0 74px;}
+.askaquestion h3{padding-bottom:34px;}
+.ask_ls{font:14px Tahoma;color:#818080;width:60px;display:block;float:left;}
+.ask_ls input {background-color:transparent !important;border:none !important;border-bottom:1px solid #000 !important;color:#000;}
+.ask_ls_textarea{height:100px;font:14px Tahoma;color:#818080;width:60px;display:block;float:left;}
+
+
+/************************head************************/
+#header{margin:0 auto;height:83px;padding:0;}
+#header-top{margin:0 auto;border-bottom:1px solid #97999c;height:108px;padding:0 0 3px 3px;}
+#header-left{width:260px;height:43px;float:left;padding-top:8px;font:13px Georgia;color:#8c8c8c;}
+#header-left a{font:13px Tahoma;color:#8c8c8c;}
+#header-right{height:43px;float:right;padding:8px 4px 0 0;text-align:right;font:14px Georgia;color:#8c8c8c;}
+#header-right a{font:13px Tahoma;color:#8c8c8c;}
+#header_center{position:absolute;top:27px;left:50%;margin-left:-169px;}
+
+/***********************top_menu***********************/
+#top_menu{margin:0 auto;padding:7px 0 0 0px;}
+#top_menu ul{float:left;height:24px;width:760px;}
+#top_menu ul li{display:inline;text-transform:uppercase;text-decoration:none;padding-right:1px;}
+#top_menu ul li a{text-transform:uppercase;text-decoration:none;color:#818080;font:14px Tahoma;padding:6px 10px 6px 11px;}
+#top_menu ul li a:hover{text-transform:uppercase;text-decoration:none;color:#fff;background-color:#818080;padding:6px 10px 6px 11px;}
+#cart{float:right;text-align:right;}
+.current a{color:#fff !important;background-color:#b8b8b8;} 
+.current_mp a{color:#000 !important;}
+.current_mp a:hover{color:#fff !important;} 
+/*.current a{color:#000 !important;font-weight: 200 !important;}
+.current a:hover{color:#fff !important;}*/
+/************************footer**********************/
+#footer{height:46px;border-top:1px solid #a2a1a1;text-align:right;text-transform:uppercase;color:#949494;padding-top:3px;font:11px Tahoma;}
+#footer a{color:#b5b5b5;}
+#search{float:left;width:50%;text-align:left;}
+#copyrights{float:right;width:50%;margin-top: 2px;}
+
+/*********************mp tooltips*******************/
+.w1, .w2, .w3, .w4, .w5, .w6, .w7{background-color:#ffffff;min-width: 105px;text-align:center !important;
+ -moz-box-shadow: 0 0 7px rgba(0,0,0,0.6); /* Для Firefox */
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.6); /* Для Safari и Chrome */
+    box-shadow: 0 0 7px rgba(0,0,0,0.6); /* Параметры тени */
+font:14px Tahoma;color:#000;display:none;position:absolute;/*background:url('img/window.png') 100% 100% no-repeat;*/padding:8px 8px 4px 8px;}
+.w1 h3, .w2 h3, .w3 h3, .w4 h3, .w5 h3, .w6 h3, .w7 h3{color:#ad0000;font:bold 12px Tahoma;padding:0;margin:0;}
+.w1 h3 span, .w2 h3 span, .w3 h3 span, .w4 h3 span, .w5 h3 span, .w6 h3 span, .w7 h3 span{color:#000000;font:bold 12px Tahoma;}
+.show{display:block;}
+.w1 strike, .w2 strike, .w3 strike, .w4 strike, .w5 strike, .w6 strike, .w7 strike{font:10px Tahoma;}
+.w1 a, .w2 a, .w3 a, .w4 a, .w5 a, .w6 a, .w7 a{font:11px Tahoma;padding:0;margin:0;}
+.w1 p, .w2 p, .w3 p, .w4 p, .w5 p, .w6 p, .w7 p{text-align:center !important;padding:2px 0 6px 0 !important;}
+.w1:hover , .w2:hover, .w3:hover, .w4:hover, .w5:hover, .w6:hover, .w7:hover{display:block !important;}
+/*********************mp carousel*******************/
+.featured_header{color:#7b7b7b;font:bold 14px Tahoma;padding-left:28px;}
+.latest_products{height:269px!important;overflow:hidden;padding:10px 0 0 23px}
+#latest_products_scroll_box{height:254px;overflow:hidden}
+#latest_products_scroll_box .jcarousel-list li img{border:0 solid #999}
+#products_carousel.jcarousel-container{border-top:1px solid #97999c;position:relative;width:1004px;height:240px;padding:14px 0 0;}
+.promo_products_carousel_noscroll{margin:0 0 0 32px;height:168px;}
+.promo_products_carousel.jcarousel-container{position:relative;width:245px;height:168px;}
+#products_carousel .jcarousel-clip{position:relative;float:left;width:888px;overflow:hidden;margin:0 0 0 58px;padding:0;height:190px;}
+.promo_products_carousel .jcarousel-clip{position:relative;float:left;width:145px;overflow:hidden; margin:0 0 0 50px;padding:0}
+#products_carousel ul, .promo_products_carousel ul{overflow:hidden;position:relative;top:0;left:0;list-style:none;margin:0 0 0 38px;padding:0}
+#products_carousel .jcarousel-list, .promo_products_carousel .jcarousel-list{overflow:hidden;position:relative;top:0;left:0;list-style:none;margin:0;padding:0;height:220px;}
+.promo_products_carousel .jcarousel-list{height:155px}
+#products_carousel .jcarousel-list li,#products_carousel li, .promo_products_carousel .jcarousel-list li, .promo_products_carousel li{width:162px;float:left;display:inline;margin:0 20px 0 0;padding:0;height:210px;text-align:center !important;}
+#products_carousel .jcarousel-next, .promo_products_carousel .jcarousel-next{position: absolute; top:90px; right:10px; vertical-align:middle; display:none; width:24px; cursor:pointer;}
+#products_carousel .jcarousel-prev, .promo_products_carousel .jcarousel-prev{position: absolute; top:90px; left:10px; display:none; width:24px; cursor:pointer;}
+#product_thumbs{overflow:hidden}
+.products_carousel_wrapper{background:#fff;padding:0px 0 0}
+#featured_products li.product_image img, #related_products .related_product_image img, ul#featured_products_holder .product_image_carousel img, .topseller_img img, ul.promo_products_holder, ul.promo_products_holder .product_image_carousel img {margin-top:-32px;height: 192px;width: 125px;}
+.product_image_carousel{height:140px;overflow:hidden;}
+/*********************mp carousel*******************/
+
+/********************* category carousel*******************/
+#products_carousel_cat.jcarousel-container{border-top:1px solid #97999c;position:relative;width:1004px;height:534px;padding:14px 0 0;}
+#products_carousel_cat .jcarousel-clip{position:relative;float:left;width:940px;overflow:hidden;margin:0 0 0 30px;padding:0;height:534px;}
+.promo_products_carousel .jcarousel-clip{position:relative;float:left;width:215px;overflow:hidden; margin:0 0 0 50px;padding:0}
+#products_carousel_cat ul{display:inline;overflow:hidden;position:relative;top:0;left:0;list-style:none;margin:0 0 0 0;padding:0}
+#products_carousel_cat .jcarousel-list{overflow:hidden;position:relative;top:0;left:0;list-style:none;margin:0;padding:0;height:534px;}
+#products_carousel_cat .jcarousel-list li,#products_carousel li{overflow:hidden;height:534px;width:235px;float:left;display:inline;margin:0 0px 0 0;padding:0;text-align:center !important;}
+
+#products_carousel_cat .jcarousel-list li img{position:relative;left:-44px;top:8px;}
+#products_carousel li img{position:relative;left:0px;top:0px;}
+
+
+#products_carousel_cat .jcarousel-next{position: absolute; top:240px; right:0px; vertical-align:middle; display:none; width:31px; cursor:pointer;}
+#products_carousel_cat .jcarousel-prev{position: absolute; top:240px; left:0px; display:none; width:31px; cursor:pointer;}
+.products_carousel_wrapper_cat{background:#fff;padding:20px 0 0}
+#featured_products_cat li.product_image img {height: 534px;width: 215px;}
+
+.featured_product_carousel_cat{display:inline;width:327px;height:543px;float:left;margin-left:11px;}
+#featured_products_wrapper_cat{position:relative;width:1044px;margin-left:-10px;}
+.cat_prod_descr{font:14px Tahoma;color:#797979;text-align:left;padding-top:2px;}
+.prod_descr, .price_and_more{}
+
+.no-transp{filter: alpha(opacity=100) !important;opacity: 1.0 !important;}
+.top5_prod_descr{font:14px Tahoma;}
+.top5_price_and_more{font:bold 14px Tahoma;color:#aa0202;}
+.top5_price_and_more a{font:14px Tahoma;color:#aa0202;}
+.price_and_more{font-weight:bold !important;color:#000;}
+.price_and_more strike{font-weight:bold !important;color:#000;}
+.price_and_more a{font-weight:normal !important;color:#797979;}
+.new_descr{width:310px;height:58px;background-color:#000;position:absolute;margin-top:-70px;color:#fff;padding:4px 8px 8px 8px;display:none;font:11px Arial;}
+.visibility {visibility:visible !important;}
+/********************* /category carousel *******************/
+
+/********************* items carousel *******************/
+.jcarousel-container{width:340px;height:548px;}
+.jcarousel-clip{width:334px;overflow:hidden;margin:0 0 0 14px;padding:0;height:534px;}
+.promo_products_carousel .jcarousel-clip{width:215px;overflow:hidden; margin:0 0 0 50px;padding:0}
+.products_carousel_items ul{overflow:hidden;list-style:none;margin:0 0 0 38px;padding:0}
+.jcarousel-list{overflow:hidden;list-style:none;margin:0;padding:0;height:534px;}
+.jcarousel-list li,#products_carousel li{height:534px;width:334px;float:left;display:inline;margin:0 20px 0 0;padding:0;text-align:center !important;}
+.jcarousel-next{position: absolute; z-index:10000;top:240px; right:-40px; vertical-align:middle; display:none; width:14px; cursor:pointer;}
+.jcarousel-prev{position: absolute; z-index:10000;top:240px; left:-18px; display:none; width:14px; cursor:pointer;}
+.products_carousel_wrapper_items{background:#fff;padding:4px 0 0;}
+#featured_products_items li.product_image img {height: 534px;width: 215px;}
+.select_img{width:80px;height:110px;}
+.see{height:533px;}
+.dont{height:0px;overflow:hidden;}
+.bord{border:1px solid #777;}
+.nobord{border:1px solid #fff;}
+.sel1, .sel2, .sel3, .sel4{display:block;width:80px;height:110px;margin:0 40px 3px 15px;padding:1px;}
+/********************* /items carousel *******************/
+
+/********************* greeting page*******************/
+#greeting{width:390px;height:100px;position:absolute;top:50%;margin-top:-50px;left:40px;/* background:url('img/main-greeting-logo.png') 1px 100% no-repeat; */}
+#greeting_menu{width:303px;height:52px; /* border-bottom:1px solid #000; */ position:relative;margin:-4px 0 0 -2px;}
+#greeting_menu ul li{margin:0;padding:0 0 0px 4px;height:40px;}
+#greeting_menu ul li a{display:block;width:100%; /* background-image:url('img/words.png');background-repeat:no-repeat; */ height:45px;font:42px Tahoma;color:#000;text-decoration:none;text-transform:uppercase;margin:0;padding:40px 0 0 72px;}
+#greeting_menu ul li a:hover{font:42px Tahoma;color:#fff;}
+.li1 a{}
+.li1 a:hover{}
+.li2 a{background-position:0px -315px;}
+.li2 a:hover{background-position:0px -47px;}
+.li6 a{background-position:0px -362px;}
+.li6 a:hover{background-position:0px -94px;}
+.li3 a{background-position:0px -409px;}
+.li3 a:hover{background-position:0px -141px;}
+.li4 a{background-position:0px -456px;}
+.li4 a:hover{background-position:0px -188px;}
+.li5 a{background-position:0px -500px;height:35px !important;}
+.li5 a:hover{background-position:0px -232px;}
+/********************* /greeting page*******************/
+
+/*********************Бокс поиск*******************/
+.search_input{padding-top: 3px;float: left;}
+.search_input input{width: 77px;font-size: 11px !important;border: none;padding: 1px 0px 0px 2px;color: #555;float: left;height:13px;background-color:#eaeaea !important;}
+.button_submit {padding: 3px 0px 0px 3px;float: left;}
+.quick_find_keyword{background-color: #eaeaea  !important;border:1px solid #eaeaea;}
+.searchboxform input:focus, .sffocus, .sffocus {background-color: #eaeaea;}
+
+/*********************задать вопрос*******************/
+.askwindow{margin:0 auto;padding:20px 60px 20px 60px;}
+.askwindowcontent{}
+
+
+
+/* This is the moving lens square underneath the mouse pointer. */
+.cloud-zoom-lens {
+	margin:-4px;	/* Set this to minus the border thickness. */
+	background-color:#fff;	
+	cursor:move;		
+}
+
+/* This is for the title text. */
+.cloud-zoom-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	top:0px;
+}
+
+/* This is the zoom window. */
+.cloud-zoom-big {
+	overflow:hidden;
+}
+
+/* This is the loading message. */
+.cloud-zoom-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #000;
+}
+
+
+
+
+/****************TOP 5********************/
+div.panel-pane div.panel-hide {
+  display: none;
+}
+
+/** For IE we add the class via js; for other browsers we rely on :hover **/
+div.panel-pane div.panel-hide-hover,
+div.panel-pane:hover div.panel-hide {
+  display: block;
+  position: absolute;
+  z-index: 200;
+  margin-top: -1.5em;
+}
+
+
+
+/* GALLERY */
+.gallery { overflow: hidden; height: 702px;position: relative;}
+.gallery-image { float: left; width: 680px; text-align: left; position: relative;}
+.article-gallery .gallery-image {
+  width: 817px;
+  margin-left:-150px;
+}
+.gallery-image ul { margin: 0; padding: 0; list-style: none; width: 480px; overflow: hidden; position: absolute; top: 0; right: 0;}
+.gallery-image ul.gallery-th li { float: left; margin-right: 6px;}
+.gallery-image ul.gallery-th li a img { border: 2px solid #fff;}
+.gallery-image ul.gallery-th li a:hover img { border: 2px solid #000;}
+.galleryth-inner { width: 450px; /*position: absolute;*/ right: 0; top: 0; float: left;}
+.gallery-content {float:right;padding-right:35px;width: 244px;}
+.gallery-content h3 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+.gallery-content h3 strong {
+    display: block;
+}
+#gallery-m-slider-prev{margin-right: 92px;}
+.gallery-controls-arrows { overflow: hidden; padding: 35px 0 18px 0;}
+.gallery-controls-arrows a {
+  display: block;
+  float: left;
+  width: 24px;
+  height: 44px;
+  margin-right: 9px;
+  background-image: url(TOP_5arr.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+.gallery-controls-arrows #gallery-m-slider-prev,
+.gallery-controls-arrows #gallery-th-m-slider-prev {
+    background-position: 0 0;
+}
+
+.gallery-controls-arrows #gallery-m-slider-prev.empty-prev,
+.gallery-controls-arrows #gallery-th-m-slider-prev.empty-prev {
+  background-position: 0 100%;
+}
+.gallery-controls-arrows #gallery-m-slider-next,
+.gallery-controls-arrows #gallery-th-m-slider-next {
+  background-position: 100% 0%;
+}
+
+.gallery-controls-arrows #gallery-m-slider-next.empty-next,
+.gallery-controls-arrows #gallery-th-m-slider-next.empty-next {
+  background-position: 100% 100%;
+}
+.gallery-controls-arrows #gallery-m-slider-prev:hover,
+.gallery-controls-arrows #gallery-th-m-slider-prev:hover {
+  background-position: 0 0;
+}
+.gallery-controls-arrows #gallery-m-slider-next:hover,
+.gallery-controls-arrows #gallery-th-m-slider-next:hover {
+  background-position: 100% 0;
+}
+
+.m-slider-control{display:none;}
+
+.panel-panel h5{font:17px Tahoma;padding:0;margin: -4px 0 52px 0px;color:#000;}
+.gallery-details{padding:60px 0 0 0;}
+
+#gallery-m-slider-pag{position:absolute;width:80px;margin:11px 0 0 -101px;font: 15px Tahoma;}
+#gallery-controls-arrows{margin:48px 0 0 2px;}
+.z-img{left:-10px;position:relative;}
